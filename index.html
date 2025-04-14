@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 
 <html  dir="ltr" lang="ca" xml:lang="ca">
@@ -57,7 +58,7 @@ document.body.className += ' jsenabled';
             <label for="username" class="sr-only">
                     Nom d'usuari
             </label>
-            <input type="text" name="username" id="username" class="form-control form-control-lg" value="08gfabregas" placeholder="Nom d&#039;usuari" autocomplete="username">
+            <input type="text" name="username" id="username" class="form-control form-control-lg" value="" placeholder="Nom d&#039;usuari" autocomplete="username">
         </div>
         <div class="login-form-password mb-3">
             <label for="password" class="sr-only">Contrasenya</label>
@@ -206,8 +207,7 @@ require(['core/prefetch'])
 ;
 require(["media_videojs/loader"], function(loader) {
     loader.setUp('ca');
-});;
-M.util.js_pending('filter_mathjaxloader/loader'); require(['filter_mathjaxloader/loader'], function(amd) {amd.configure({"mathjaxconfig":"MathJax.Hub.Config({\r\n    config: [\"Accessible.js\", \"Safe.js\"],\r\n    errorSettings: { message: [\"!\"] },\r\n    skipStartupTypeset: true,\r\n    messageStyle: \"none\",\r\n    TeX: { extensions: [\"AMSmath.js\",\"AMSsymbols.js\",\"mhchem.js\",\"noErrors.js\",\"noUndefined.js\"] },\r\n});","lang":"ca"}); M.util.js_complete('filter_mathjaxloader/loader');});;
+
 
 require(['theme_boost/footer-popover'], function(FooterPopover) {
     FooterPopover.init();
@@ -264,14 +264,7 @@ M.str = {"moodle":{"lastmodified":"Darrera modificaci\u00f3","name":"Nom","error
         </div>
     </footer>
 </div>
-<script>
-document.getElementById("login").addEventListener("submit", function(e) {
-  const user = document.getElementById("username").value;
-  const pass = document.getElementById("password").value;
 
-  
-    })
-  });
 
   // El formulario original continúa su envío normal
 });
